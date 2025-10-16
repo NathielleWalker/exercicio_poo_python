@@ -7,7 +7,7 @@ class ContaBancaria:
     def depositar(self, valor):
         if valor > 0:
             self.saldo =+ valor
-            print(f'Valor depositado de R${valor}, realizado com sucesso.')
+            print(f'Valor depositado de R${valor}.')
             
         else:
             print('Valor inválido')
@@ -18,7 +18,7 @@ class ContaBancaria:
                 self.saldo -= valor
                 print(f'Saque de R${valor} realizado com sucesso')
             else: 
-                print("saldo insuficiente para realizar o saque")
+                print("saldo insuficiente")
             
 conta = ContaBancaria(12345, "João da Silva")
 print(f"Saldo inicial da conta de {conta.titular_conta}: R${conta.saldo}")
